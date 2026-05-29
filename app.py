@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 # API KEY
-api_key = "[Write Your API Key Here"
+api_key = "YOUR_API_KEY"
 
 # GET WEATHER FUNCTION
 def get_weather():
