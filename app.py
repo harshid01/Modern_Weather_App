@@ -5,7 +5,7 @@ from tkinter import messagebox
 # =========================
 # API KEY
 # =========================
-api_key = "33d058835bb8991f5e008a4858155d5d"
+api_key = "[Write Your API Key Here"
 
 # =========================
 # GET WEATHER FUNCTION
