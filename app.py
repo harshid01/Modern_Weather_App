@@ -2,14 +2,10 @@ import requests
 import tkinter as tk
 from tkinter import messagebox
 
-# =========================
 # API KEY
-# =========================
 api_key = "[Write Your API Key Here"
 
-# =========================
 # GET WEATHER FUNCTION
-# =========================
 def get_weather():
 
     city = city_entry.get()
@@ -54,9 +50,7 @@ def get_weather():
         messagebox.showerror("Error", str(e))
 
 
-# =========================
 # MAIN WINDOW
-# =========================
 root = tk.Tk()
 
 root.title("Modern Weather App")
@@ -73,9 +67,7 @@ root.resizable(True, True)
 # Background Color
 root.configure(bg="#121212")
 
-# =========================
 # TITLE
-# =========================
 title = tk.Label(
     root,
     text="🌤 Weather App",
@@ -85,15 +77,11 @@ title = tk.Label(
 )
 title.pack(pady=20)
 
-# =========================
 # MAIN FRAME
-# =========================
 frame = tk.Frame(root, bg="#1E1E1E", bd=0)
 frame.pack(pady=20, padx=20, fill="both", expand=True)
 
-# =========================
 # CITY LABEL + ENTRY
-# =========================
 city_label = tk.Label(
     frame,
     text="City Name (e.g. Patan, New York)",
@@ -114,9 +102,7 @@ city_entry = tk.Entry(
 )
 city_entry.pack(ipady=8)
 
-# =========================
 # COUNTRY LABEL + ENTRY
-# =========================
 country_label = tk.Label(
     frame,
     text="Country Code (e.g. India - IN, United State - US)",
@@ -137,9 +123,7 @@ country_entry = tk.Entry(
 )
 country_entry.pack(ipady=8)
 
-# =========================
 # SEARCH BUTTON
-# =========================
 search_btn = tk.Button(
     frame,
     text="Get Weather",
@@ -153,9 +137,7 @@ search_btn = tk.Button(
 )
 search_btn.pack(pady=30, ipadx=20, ipady=10)
 
-# =========================
 # RESULT AREA
-# =========================
 result_label = tk.Label(
     frame,
     text="",
@@ -166,9 +148,7 @@ result_label = tk.Label(
 )
 result_label.pack(pady=20)
 
-# =========================
 # FOOTER
-# =========================
 footer = tk.Label(
     root,
     text="Created by Harshid panchal",
@@ -179,7 +159,5 @@ footer = tk.Label(
 )
 footer.pack(pady=10)
 
-# =========================
 # RUN APP
-# =========================
 root.mainloop()
