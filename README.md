@@ -1,24 +1,29 @@
-# 🌤 Modern Weather App
+# 🌤 Weather App
 
-A modern and user-friendly desktop Weather Application built using Python and Tkinter.
-This application fetches real-time weather data using the OpenWeather API and displays temperature, humidity, weather condition, and wind speed in a clean graphical interface.
+A desktop weather application made with Python and Tkinter that shows real-time weather information using the OpenWeather API.
 
----
-
-# 🚀 Features
-
-* 🌡 Real-time weather information
-* 🌍 Search weather by city and country code
-* 💧 Humidity details
-* 🌬 Wind speed information
-* 🎨 Modern dark-themed GUI
-* 🖥 Responsive and resizable window
-* ⚡ Fast API response
-* 🔥 Beginner-friendly Python project
+I created this project to improve my Python skills and learn how APIs work in real applications. The app has a modern dark-themed interface where users can search weather details by entering a city name and country code.
 
 ---
 
-# 🛠 Technologies Used
+## 🚀 Features
+
+* Real-time weather data
+* Search weather by city and country code
+* Shows:
+
+  * Temperature
+  * Feels like temperature
+  * Humidity
+  * Weather condition
+  * Wind speed
+* Modern GUI using Tkinter
+* Dark theme interface
+* Responsive and resizable window
+
+---
+
+## 🛠 Technologies Used
 
 * Python
 * Tkinter
@@ -27,57 +32,72 @@ This application fetches real-time weather data using the OpenWeather API and di
 
 ---
 
-# 📦 Required Libraries
+## 📦 Installation
 
-Install the required packages before running the project.
+### 1. Clone Repository
 
-## Install Requests Library
+```bash id="kq51dh"
+git clone https://github.com/your-username/weather-app.git
+```
 
-```bash
+### 2. Open Project Folder
+
+```bash id="x8r0vl"
+cd weather-app
+```
+
+### 3. Install Required Packages
+
+```bash id="p2c6my"
 pip install requests
 ```
 
-## Install Pillow + Requests
+If pip does not work:
 
-```bash
-py -m pip install pillow requests
+```bash id="w4u9se"
+py -m pip install requests
 ```
 
 ---
 
-# 🔑 Get OpenWeather API Key
+## 🔑 Setup API Key
 
-1. Visit:
-   https://openweathermap.org/api
+Create a free API key from OpenWeather:
 
-2. Create a free account
+https://openweathermap.org/api
 
-3. Generate your API key
+Replace this line in `app.py`:
 
-4. Replace this line in `app.py`
-
-```python
+```python id="f9n3yb"
 api_key = "YOUR_API_KEY"
 ```
 
-with your real API key.
+with your own API key.
 
 ---
 
-# ▶ Run The Project
+## ▶ Run the Application
 
-Open terminal inside project folder and run:
-
-```bash
+```bash id="z1t7qk"
 py app.py
 ```
 
 ---
 
-# 📁 Project Structure
+## 🌍 Example
 
-```txt
-weather_app/
+| City      | Country Code |
+| --------- | ------------ |
+| Ahmedabad | IN           |
+| London    | UK           |
+| New York  | US           |
+
+---
+
+## 📁 Project Structure
+
+```txt id="m5w2rp"
+weather-app/
 │
 ├── app.py
 ├── README.md
@@ -85,46 +105,6 @@ weather_app/
 
 ---
 
-# 🌍 Example Country Codes
-
-| Country        | Code |
-| -------------- | ---- |
-| India          | IN   |
-| United States  | US   |
-| United Kingdom | UK   |
-| Canada         | CA   |
-| Australia      | AU   |
-
----
-
-# 📸 Application Preview
-
-Modern Weather App GUI with:
-
-* Dark Theme
-* Modern Layout
-* Weather Information Display
-* Responsive Design
-
----
-
-# 📌 Future Improvements
-
-* 🌤 Weather icons
-* 📅 7-day forecast
-* 📍 Auto location detection
-* 🎤 Voice search
-* 🌎 Live weather map
-* 🌙 Light/Dark mode toggle
-
----
-
-# 👨‍💻 Author
+## 👨‍💻 Developer
 
 Harshid Panchal
-
----
-
-# ⭐ GitHub
-
-If you like this project, give it a ⭐ on GitHub.
